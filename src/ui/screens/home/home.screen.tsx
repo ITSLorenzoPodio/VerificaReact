@@ -1,7 +1,15 @@
 import React, {useEffect, useState} from 'react';
 import {Button, SafeAreaView} from "react-native";
 import {NavigationProp} from '@react-navigation/native';
-import
+import Card from '../atoms/product.atom'
+
+interface Product {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    image: string;
+}
 
 type HomeScreenProps = {
     navigation: NavigationProp<any>;
@@ -21,7 +29,7 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
     }, []);
 
     const renderProduct = ({item}: {item: Product}) => (
-        <Product
+        <Card
             {...item}
             onCardPress={() => navigation.navigate('ProductDetails', {product: item})}
             onAddToCart={() => console.log('Adding to cart:', item.id)}
