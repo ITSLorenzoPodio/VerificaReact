@@ -12,7 +12,7 @@ const RootStack = () => {
         <NavigationContainer>
             <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen
-                    name="Home"
+                    name="Main"
                     component={TabNavigator}
                 />
                 <Stack.Screen name="Settings" component={SettingsScreen} />

@@ -3,11 +3,12 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#f5f5f5'
+        backgroundColor: '#0050AA',
     },
     listContainer: {
-        paddingVertical: 10,
-        alignItems: 'center'
+        paddingVertical: 8,
+        alignItems: 'center',
+        width: '100%',
     }
 });
 

@@ -13,33 +13,47 @@ const styles = StyleSheet.create({
     },
     image: {
         width: '100%',
-        height: 150,
+        height: 180,
+        resizeMode: 'cover',
     },
     contentContainer: {
-        padding: 8,
+        padding: 12,
+        backgroundColor: 'white',
     },
     buttonContainer: {
-        padding: 8,
+        padding: 12,
+        backgroundColor: '#FFF000',
+        borderTopWidth: 1,
+        borderTopColor: '#E5E5E5',
     },
     title: {
-        fontSize: 16,
-        marginBottom: 4,
+        fontSize: 14,
+        color: '#333333',
+        marginBottom: 8,
+        fontWeight: '500',
     },
     price: {
-        fontSize: 16,
+        fontSize: 24,
         fontWeight: 'bold',
+        color: '#000000',
+        marginBottom: 4,
     },
     description: {
-        fontSize: 14,
+        fontSize: 12,
+        color: '#666666',
         marginBottom: 8,
+        lineHeight: 16,
     },
     button: {
-        backgroundColor: 'blue',
-        padding: 8,
+        backgroundColor: '#0050AA',
+        padding: 12,
+        borderRadius: 4,
     },
     buttonText: {
         color: 'white',
         textAlign: 'center',
+        fontWeight: 'bold',
+        fontSize: 14,
     },
 });
 
