@@ -1,4 +1,4 @@
-import {HomeScreen} from '../screens/home.screen';
+import {HomeScreen} from '../screens/home/home.screen';
 import {ProfileScreen} from '../screens/profile.screen';
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';

@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import {Button, SafeAreaView} from "react-native";
+import {Button, FlatList, SafeAreaView} from "react-native";
 import {NavigationProp} from '@react-navigation/native';
-import Card from '../atoms/product.atom'
+import Card from '../../atoms/product.atom'
+import styles from "./home.styles";
 
 interface Product {
     id: number;
@@ -31,8 +32,7 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
     const renderProduct = ({item}: {item: Product}) => (
         <Card
             {...item}
-            onCardPress={() => navigation.navigate('ProductDetails', {product: item})}
-            onAddToCart={() => console.log('Adding to cart:', item.id)}
+            onPress={() => console.log('Adding to cart:', item.id)}
         />
     );
 
@@ -47,5 +47,4 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
             />
         </SafeAreaView>
     );
-};
 };

@@ -7,63 +7,46 @@ const cardWidth = width * 0.9;
 const styles = StyleSheet.create({
     card: {
         backgroundColor: 'white',
-        borderRadius: 16,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 3.84,
-        elevation: 5,
-        margin: 10,
-        width: cardWidth,
-        overflow: 'hidden',
+        borderWidth: 1,
+        borderColor: '#ddd',
+        margin: 8,
+        alignSelf: 'center',  // Add this to center the card
+        width: '95%',
     },
     mainContent: {
         width: '100%',
     },
     image: {
         width: '100%',
-        height: 200,
+        height: 150,
+        resizeMode: 'contain',  // Add this to ensure image is visible
+        backgroundColor: '#f9f9f9',  // Add background to see image container
     },
     contentContainer: {
-        padding: 16,
-        paddingBottom: 8, // Reduced to accommodate button
+        padding: 8,
     },
     buttonContainer: {
-        padding: 16,
-        paddingTop: 0,
+        padding: 8,
     },
     title: {
-        fontSize: 18,
-        fontWeight: '600',
-        color: '#333',
-        marginBottom: 8,
+        fontSize: 16,
+        marginBottom: 4,
     },
     price: {
-        fontSize: 20,
-        fontWeight: '700',
-        color: '#2196F3',
-        marginBottom: 8,
+        fontSize: 16,
+        fontWeight: 'bold',
     },
     description: {
         fontSize: 14,
-        color: '#666',
         marginBottom: 8,
-        lineHeight: 20,
     },
     button: {
-        backgroundColor: '#2196F3',
-        paddingVertical: 12,
-        paddingHorizontal: 24,
-        borderRadius: 8,
-        alignItems: 'center',
+        backgroundColor: 'blue',
+        padding: 8,
     },
     buttonText: {
         color: 'white',
-        fontSize: 16,
-        fontWeight: '600',
+        textAlign: 'center',
     },
 });
 

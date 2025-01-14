@@ -11,15 +11,14 @@ interface Product {
 }
 
 interface ProductProps extends Product {
-    onCardPress: () => void;
-    onAddProduct: () => void;
+    onPress: () => void;
 }
 
-const Product = ({ id, title, price, description, image, onAddProduct, onCardPress }: ProductProps) => {
+const Card = ({ id, title, price, description, image, onPress }: ProductProps) => {
     return (
         <View style={styles.card}>
             <TouchableOpacity
-                onPress={onCardPress}
+                onPress={onPress}
                 activeOpacity={0.95}
                 style={styles.mainContent}
             >
@@ -44,7 +43,7 @@ const Product = ({ id, title, price, description, image, onAddProduct, onCardPre
             <View style={styles.buttonContainer}>
                 <TouchableOpacity
                     style={styles.button}
-                    onPress={onAddProduct}
+                    onPress={onPress}
                 >
                     <Text style={styles.buttonText}>Add to Cart</Text>
                 </TouchableOpacity>
@@ -52,3 +51,5 @@ const Product = ({ id, title, price, description, image, onAddProduct, onCardPre
         </View>
     )
 }
+
+export default Card;
