@@ -1,22 +1,21 @@
 import {HomeScreen} from '../screens/home/home.screen';
-import {ProfileScreen} from '../screens/profile.screen';
+import {SettingsScreen} from '../screens/settings.screen';
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {SafeAreaView} from "react-native";
+import TabNavigator from './tabbar/tabbar.navigation';
 
 const Stack = createNativeStackNavigator();
 
 const RootStack = () => {
     return (
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator screenOptions={{ headerShown: false }}>
                 <Stack.Screen
                     name="Home"
-                    component={HomeScreen}
-                    options={{title: 'Welcome'}}
+                    component={TabNavigator}
                 />
-                <Stack.Screen name="Profile" component={ProfileScreen} />
+                <Stack.Screen name="Settings" component={SettingsScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     );

@@ -7,7 +7,7 @@ type ProfileScreenProps = {
     route: RouteProp<any, any>;
 };
 
-export const ProfileScreen = ({route}: ProfileScreenProps) => {
+export const SettingsScreen = ({route}: ProfileScreenProps) => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <Text>Nome: {route.params?.name}</Text>;

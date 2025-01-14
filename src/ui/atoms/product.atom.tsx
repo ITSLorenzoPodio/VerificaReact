@@ -32,7 +32,7 @@ const Card = ({ id, title, price, description, image, onPress }: ProductProps) =
                         {title}
                     </Text>
                     <Text style={styles.price}>
-                        ${price.toFixed(2)}
+                        {price.toFixed(2)}€
                     </Text>
                     <Text style={styles.description} numberOfLines={2}>
                         {description}
@@ -45,7 +45,7 @@ const Card = ({ id, title, price, description, image, onPress }: ProductProps) =
                     style={styles.button}
                     onPress={onPress}
                 >
-                    <Text style={styles.buttonText}>Add to Cart</Text>
+                    <Text style={styles.buttonText}>Buy</Text>
                 </TouchableOpacity>
             </View>
         </View>

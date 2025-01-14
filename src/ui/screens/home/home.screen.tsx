@@ -32,7 +32,7 @@ export const HomeScreen = ({navigation}: HomeScreenProps) => {
     const renderProduct = ({item}: {item: Product}) => (
         <Card
             {...item}
-            onPress={() => console.log('Adding to cart:', item.id)}
+            onPress={() => console.log('Buy:', item.id)}
         />
     );
 
