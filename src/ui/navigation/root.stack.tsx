@@ -3,6 +3,7 @@ import {ProfileScreen} from '../screens/profile.screen';
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {SafeAreaView} from "react-native";
 
 const Stack = createNativeStackNavigator();
 

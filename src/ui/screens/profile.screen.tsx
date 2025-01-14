@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text} from "react-native";
+import {SafeAreaView, Text} from "react-native";
 import {NavigationProp, RouteProp} from '@react-navigation/native';
 
 type ProfileScreenProps = {
@@ -8,5 +8,8 @@ type ProfileScreenProps = {
 };
 
 export const ProfileScreen = ({route}: ProfileScreenProps) => {
-    return <Text>Nome: {route.params?.name}</Text>;
-};
+    return (
+        <SafeAreaView style={{ flex: 1 }}>
+            <Text>Nome: {route.params?.name}</Text>;
+        </SafeAreaView>
+    )};
